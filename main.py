@@ -48,6 +48,6 @@ def handle_not_found(error):
     return render_template("index.html", data=[], query="", msg="エラーが起きました"), 500
 
 if __name__ == "__main__":
-    app.debug = True
+    app.debug = False
     app.run(host="0.0.0.0", port=8080)
 
